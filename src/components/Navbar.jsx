@@ -18,7 +18,7 @@ const Navbar = ({ user }) => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="fixed top-0 left-0 w-full bg-gray-800 p-4 z-50 shadow-md">
       <div className="flex justify-between items-center">
         <h1 className="text-white text-2xl cursor-pointer" onClick={() => navigate('/')}>Movie Review</h1>
         <div className="flex items-center gap-10">
