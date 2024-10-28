@@ -31,7 +31,7 @@ const Genres = ({ onGenreSelect }) => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 mt-20">
       <h1 className="text-2xl font-bold mb-4">Select Genre</h1>
       <div className="flex gap-4 flex-wrap mb-6">
         {genres.map((genre) => (
