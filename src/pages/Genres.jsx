@@ -6,11 +6,12 @@ const Genres = ({ onGenreSelect }) => {
   const [genres, setGenres] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState('');
   const navigate = useNavigate();
+  const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
   useEffect(() => {
     const fetchGenres = async () => {
       try {
-        const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=0fae8cdb0aaa5306ef8bec98a99a070e`);
+        const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`);
         const data = await response.json();
         setGenres(data.genres);
       } catch (error) {

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Genres from './pages/Genres';
+import MovieDetails from './pages/MovieDetails'; 
 import { onAuthStateChanged } from 'firebase/auth'; // Import onAuthStateChanged
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home selectedGenre={selectedGenre} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/genres" element={<Genres onGenreSelect={handleGenreSelect} />} />
+          <Route path="/movie/:id" element={<MovieDetails />} /> {/* New route */}
         </Routes>
       </div>
     </Router>
