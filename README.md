@@ -23,8 +23,8 @@ The Movie Review Application is a web application that allows users to view movi
 - **Frontend:** React.js, HTML, CSS
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
+- **API:** TMDB
 - **Authentication:** Firebase Authentication
-- **Hosting:** (If applicable, mention where you are hosting the app, e.g., Vercel, Heroku)
 
 ## Getting Started
 To run this project locally, follow these steps:
